@@ -8,12 +8,14 @@ console.log("INFO: Iniciando revision de integracion con Telegram...");
 if (!token) {
   console.error("ERROR: No se encontro TELEGRAM_BOT_TOKEN.");
   console.error("SUGERENCIA: Verifique el archivo .env sin compartir el token.");
+  console.error("INFO: Terminando con exit 1 porque falta configuracion obligatoria.");
   process.exit(1);
 }
 
 if (!chatId) {
   console.error("ERROR: No se encontro TELEGRAM_CHAT_ID.");
   console.error("SUGERENCIA: Verifique el chat ID sin publicarlo en capturas.");
+  console.error("INFO: Terminando con exit 1 porque falta configuracion obligatoria.");
   process.exit(1);
 }
 
